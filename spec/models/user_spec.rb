@@ -15,8 +15,8 @@ RSpec.describe User, type: :model do
     it { should be_valid }
   end
 
-  describe 'when email is not present' do
-    it { should  validate_uniqueness_of(:email).ignoring_case_sensitivity }
+  describe 'validations on email and password' do
+    it { should validate_uniqueness_of(:email).ignoring_case_sensitivity }
     it { should validate_confirmation_of(:password) }
     it { should validate_presence_of(:email) }
     it { should allow_value('email@domain.com').for(:email) }

@@ -10,7 +10,7 @@ development:
   port: 5432
   username: andrielli_bello
   password: andri_dev
-  
+
 test:
   <<: *default
   database: marketplace_api_test

@@ -27,6 +27,7 @@ gem 'rswag-ui'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
 gem 'bootsnap', require: false
+gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'rack-cors'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
@@ -43,6 +44,7 @@ group :development, :test do
 end
 
 group :teste do
+  gem 'shoulda-matchers', '~> 6.0'
   gem 'simplecov', '~> 0.22.0', require: false
 end
 
